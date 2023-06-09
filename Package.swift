@@ -11,7 +11,6 @@ let package = Package(
             name: "test-package-deploy",
             targets: [
                 "app-framework",
-                "flutter-framework",
                 "flutter-plugin-framework",
                 "flutter-toast-framework",
                 "toast-framework",
@@ -22,7 +21,6 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(name: "app-framework", path: "./App.xcframework"),
-        .binaryTarget(name: "flutter-framework", path: "./Flutter.xcframework"),
         .binaryTarget(name: "flutter-plugin-framework", path: "./FlutterPluginRegistrant.xcframework"),
         .binaryTarget(name: "flutter-toast-framework", path: "./fluttertoast.xcframework"),
         .binaryTarget(name: "toast-framework", path: "./Toast.xcframework"),
