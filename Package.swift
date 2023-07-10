@@ -14,7 +14,6 @@ let package = Package(
                 "flutter-plugin-framework",
                 "flutter-toast-framework",
                 "toast-framework",
-                "url-launcher-framework",
             ]),
     ],
     targets: [
@@ -24,6 +23,5 @@ let package = Package(
         .binaryTarget(name: "flutter-plugin-framework", path: "./FlutterPluginRegistrant.xcframework"),
         .binaryTarget(name: "flutter-toast-framework", path: "./fluttertoast.xcframework"),
         .binaryTarget(name: "toast-framework", path: "./Toast.xcframework"),
-        .binaryTarget(name: "url-launcher-framework", path: "./url_launcher_ios.xcframework"),
     ]
 )
